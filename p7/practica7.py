@@ -59,7 +59,7 @@ df['Cluster'] = clusters
 #visualizacion de los clusters
 plt.figure(figsize=(8,6))
 
-colors = ['pink', 'green', 'yellow']
+colors = ['pink', 'green', 'yellow','blue']
 
 sns.scatterplot(x=X_scaled[:,0], y=X_scaled[:,1], hue=df['Cluster'], palette=colors, alpha=0.6)
 plt.scatter(centroids[:,0], centroids[:,1], s=300, c='red', marker='X', label='Centroides')
